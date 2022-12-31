@@ -1,0 +1,10 @@
+In order to use Tomcat's web management interface, you will need to create a user. Open the tomcat-users.xml file with the command:
+
+sudo nano /usr/share/tomcat/conf/tomcat-users.xml
+Scroll down to below the line which reads <tomcat-users> and add the information for your user account:
+
+<user username="[username]" password="[password]" roles="manager-gui,admin-gui"/>
+For example, to add the user jdoe with password En4EW25eI0 this section will read:
+
+<tomcat-users>
+<user username="jdoe" password="En4EW25eI0" roles="manager-gui,admin-gui"/>
